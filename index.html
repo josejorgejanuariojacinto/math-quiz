@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="katex/katex.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Math Quiz!</title>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="screen active" id="start-screen">
+            <h1>Math Quiz!</h1>
+            <p>Test your math skills with those exercices!</p>
+            <button id="start-btn">Start</button>
+
+        </div>
+
+        
+        <div class="screen" id="quiz-screen">
+            <h2 id="question"> Questions goes here</h2>
+            <header id="quiz-header">
+                <p>Question <span id="current-question-span">1</span> of <span id="total-questions-span">6</span></p>
+                <p>Score: <span id="score">0</span></p>
+            </header>
+            
+
+          <div id= "answer-container"> <!--Answer goes here. --> </div>
+
+          <div id="progress">
+            <div id="progress-bar"></div>
+          </div>
+
+        </div>
+
+        <div class="screen" id="results-screen">
+            <h2 id="result">Results</h2>
+            <p>Congratulations! <br><br> You mede it. <br><br>You scored <span id="scored">0</span> of <span id="total-score">6.</span></p>
+            <button id="restart-btn">Restart</button>
+        </div>
+
+
+    </div>
+
+    <script src="script.js"></script>
+
+    <script defer src="katex/katex.min.js"></script>
+    
+    <script defer src="katex/auto-render.min.js" ></script>
+     
+    
+</body>
+</html>
